@@ -1,3 +1,6 @@
+setlocal
 git add .
-git commit -m "コミットメッセージ"
+set /p commess=値を入力してください:
+git commit -m %commess%
 git push
+pause
